@@ -3,21 +3,21 @@
 //using namespace std;
 //
 //int t,n;
-//int dp[12];
+//int answer[12];
 //
 //int main() {
 //    cin >> t;
 //
-//    dp[1] = 1, dp[2] = 2, dp[3] = 4;
+//    answer[1] = 1, answer[2] = 2, answer[3] = 4;
 //
 //    for(int i = 4; i <= 11; i++) {
-//        dp[i] = dp[i - 1] + dp[i - 2] + dp[i - 3];
+//        answer[i] = answer[i - 1] + answer[i - 2] + answer[i - 3];
 //    }
 //
 //    for (int i = 0; i < t; i++) {
 //        cin >> n;
 //
-//        cout << dp[n] << endl;
+//        cout << answer[n] << endl;
 //    }
 //}
 ////

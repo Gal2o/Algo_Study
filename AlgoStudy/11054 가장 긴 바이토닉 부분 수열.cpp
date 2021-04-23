@@ -2,7 +2,7 @@
 //#include <vector>
 //
 //using namespace std;
-//int n, su[1002], dp;
+//int n, su[1002], answer;
 //int udp[1002], ddp[1002];
 //
 //int main() {
@@ -35,9 +35,9 @@
 //
 //    // 같은 인덱스의 합에서 가장 큰 것 - 1, -1을 해줘야 중복을 뺄 수 있다.
 //    for (int i = 1; i <= n; i++)
-//        dp = max(dp, udp[i] + ddp[i] - 1);
+//        answer = max(answer, udp[i] + ddp[i] - 1);
 //
-//    cout << dp << endl;
+//    cout << answer << endl;
 //}
 ////
 //// Created by Mac2 on 2021/04/20.

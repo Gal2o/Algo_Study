@@ -1,18 +1,18 @@
 //#include <iostream>
 //using namespace std;
 //int n;
-//long long dp[91];
+//long long answer[91];
 //
 //int main() {
 //    cin >> n;
 //
-//    dp[0] = 0, dp[1] = 1;
+//    answer[0] = 0, answer[1] = 1;
 //
 //    for(int i =2; i <= n; i ++){
-//        dp[i] = dp[i -1] + dp[i - 2];
+//        answer[i] = answer[i -1] + answer[i - 2];
 //    }
 //
-//    cout << dp[n] << endl;
+//    cout << answer[n] << endl;
 //}
 //
 ////

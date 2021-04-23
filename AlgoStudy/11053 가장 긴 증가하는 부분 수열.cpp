@@ -1,8 +1,8 @@
 //#include <iostream>
 //
 //using namespace std;
-//int n, dp;
-//int su[1001], dp[1001];
+//int n, answer;
+//int su[1001], answer[1001];
 //
 //int main() {
 //    cin >> n;
@@ -11,17 +11,17 @@
 //        cin >> su[i];
 //
 //    for (int i = 1; i <= n; i++) {
-//        dp[i] = 1;
+//        answer[i] = 1;
 //        for (int j = 0; j < i; j++) {
 //            if (su[j] < su[i])
-//                dp[i] = max(dp[j] + 1, dp[i]);
+//                answer[i] = max(answer[j] + 1, answer[i]);
 //        }
 //
-//        if(dp[i] > dp)
-//            dp = dp[i];
+//        if(answer[i] > answer)
+//            answer = answer[i];
 //    }
 //
-//    cout << dp << endl;
+//    cout << answer << endl;
 //}
 ////
 //// Created by Mac2 on 2021/04/20.
