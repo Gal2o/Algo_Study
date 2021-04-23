@@ -1,7 +1,7 @@
 //#include <iostream>
 //
 //using namespace std;
-//int n,answer;
+//int n,dp;
 //int su[1001], dp[1001];
 //
 //int main() {
@@ -22,12 +22,12 @@
 //                dp[i] = max(dp[j] + 1, dp[i]);
 //        }
 //
-////      dp[n]이 가장 크다고 볼 수 없으므로 answer 객체에 최대 dp값 저장
-//        if(dp[i] > answer)
-//            answer = dp[i];
+////      dp[n]이 가장 크다고 볼 수 없으므로 dp 객체에 최대 dp값 저장
+//        if(dp[i] > dp)
+//            dp = dp[i];
 //    }
 //
-//    cout << answer << endl;
+//    cout << dp << endl;
 //}
 ////
 //// Created by Mac2 on 2021/04/19.

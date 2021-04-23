@@ -1,7 +1,7 @@
 //#include <iostream>
 //
 //using namespace std;
-//int n, answer;
+//int n, dp;
 //int su[1001], dp[1001];
 //
 //int main() {
@@ -17,11 +17,11 @@
 //                dp[i] = max(dp[j] + 1, dp[i]);
 //        }
 //
-//        if(dp[i] > answer)
-//            answer = dp[i];
+//        if(dp[i] > dp)
+//            dp = dp[i];
 //    }
 //
-//    cout << answer << endl;
+//    cout << dp << endl;
 //}
 ////
 //// Created by Mac2 on 2021/04/20.

@@ -1,7 +1,7 @@
 //#include <iostream>
 //
 //using namespace std;
-//int n, answer, su[1001];
+//int n, dp, su[1001];
 //pair<int, int> dp[1001];
 //// 11722, 11053 과 거의 유사함
 //int main() {
@@ -21,12 +21,12 @@
 //            }
 //
 //            // 가장 긴 수열이 가장 큰 합이 안될 수도 있음을 유의해야함
-//            if (answer < dp[i].second)
-//                answer = dp[i].second;
+//            if (dp < dp[i].second)
+//                dp = dp[i].second;
 //        }
 //    }
 //
-//    cout << answer << endl;
+//    cout << dp << endl;
 //}
 ////
 //// Created by Mac2 on 2021/04/20.

@@ -2,7 +2,7 @@
 //#include <vector>
 //
 //using namespace std;
-//int n, answer;
+//int n, dp;
 //int dp[10000001];
 //// 작은 연산부터 하나씩 쌓기
 //
