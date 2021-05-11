@@ -6,7 +6,7 @@
 //int n, width;
 //double answer;
 //char map[5][100];
-//string input[10];
+//string v[10];
 //
 //string bulb[10] = { // 0 ~ 9 까지 전등 정보를 저장한다.
 //        {"####.##.##.####"},
@@ -35,11 +35,11 @@
 //    for (int i = 0; i < 5; i++) {
 //        for (int j = 0; j < width; j++) {
 //            // 4로 나눴을 때, 3이면 빈 공간이므로 스킵하고
-//            // 몫이 각 자리수의 배열 index이므로 input[0 ~ n-1]에 정보를 저장한다.
+//            // 몫이 각 자리수의 배열 index이므로 v[0 ~ n-1]에 정보를 저장한다.
 //            if (j % 4 == 3)
 //                continue;
 //
-//            input[j / 4].push_back(map[i][j]);
+//            v[j / 4].push_back(map[i][j]);
 //        }
 //    }
 //
@@ -54,7 +54,7 @@
 //
 //            // 입력된 정보가 #인데 전등 정보가 .이면 유효한 전등이 아니므로 스킵한다.
 //            for (int j = 0; j < bulb[i].size(); j++) {
-//                if (input[k][j] == '#' && bulb[i][j] == '.') {
+//                if (v[k][j] == '#' && bulb[i][j] == '.') {
 //                    flag = false;
 //                    break;
 //                }
