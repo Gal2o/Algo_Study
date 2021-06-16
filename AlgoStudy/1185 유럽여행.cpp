@@ -4,9 +4,26 @@
 //using namespace std;
 //typedef pair<int, int> pl;
 //
-//int ntn[mx], chk[mx];
+//int ntn[mx], chk[mx], uf[mx];
 //vector<pl> roads[mx];
 //int n, p, val = 1e9;
+//
+//int union_find(int idx) {
+//    if (idx != uf[idx])
+//        uf[idx] = union_find(uf[idx]);
+//
+//    return uf[idx];
+//
+//    /* Kruskal
+//     * d = 가중치, u, v
+//     * for(int i = 0; i < road.size(); i++)
+//     * if (u == v)
+//     *  continue;
+//     *
+//     * uf[max(u,v)] = min(u,v);
+//     * ans += d;
+//     */
+//}
 //
 //int main() {
 //    cin >> n >> p;
