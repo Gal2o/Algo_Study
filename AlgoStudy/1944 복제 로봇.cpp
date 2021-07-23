@@ -6,7 +6,7 @@
 //
 //int n, m, ans, key;
 //char miro[mx][mx];
-//int uf[pmx];
+//int parents[pmx];
 //vector<pair<int, int>> ro;
 //vector<pair<int, pair<int, int>>> ed;
 //queue<pair<int, int>> avail;
@@ -15,10 +15,10 @@
 //
 //// find 쉽게 !
 //int union_find(int idx) {
-//    if (uf[idx] != idx)
-//        uf[idx] = union_find(uf[idx]);
+//    if (parents[idx] != idx)
+//        parents[idx] = union_find(parents[idx]);
 //
-//    return uf[idx];
+//    return parents[idx];
 //}
 //
 //void bfs() {
@@ -63,7 +63,7 @@
 //
 //    // Union-find 초기 작업 (시작은 무조건 1부터야 한다.)
 //    for (int i = 1; i <= pmx; i++)
-//        uf[i] = i;
+//        parents[i] = i;
 //
 //    // 입력받은 K에 모두 도달할 수 있는지
 //    bfs();
@@ -117,7 +117,7 @@
 //        if (u == v)
 //            continue;
 //
-//        uf[max(u, v)] = min(u, v);
+//        parents[max(u, v)] = min(u, v);
 //        ans += d;
 //    }
 //

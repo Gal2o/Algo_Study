@@ -4,15 +4,15 @@
 //using namespace std;
 //typedef pair<int, int> pl;
 //
-//int ntn[mx], chk[mx], uf[mx];
+//int ntn[mx], chk[mx], parents[mx];
 //vector<pl> roads[mx];
 //int n, p, val = 1e9;
 //
 //int union_find(int idx) {
-//    if (idx != uf[idx])
-//        uf[idx] = union_find(uf[idx]);
+//    if (idx != parents[idx])
+//        parents[idx] = union_find(parents[idx]);
 //
-//    return uf[idx];
+//    return parents[idx];
 //
 //    /* Kruskal
 //     * d = 가중치, u, v
@@ -20,7 +20,7 @@
 //     * if (u == v)
 //     *  continue;
 //     *
-//     * uf[max(u,v)] = min(u,v);
+//     * parents[max(u,v)] = min(u,v);
 //     * ans += d;
 //     */
 //}

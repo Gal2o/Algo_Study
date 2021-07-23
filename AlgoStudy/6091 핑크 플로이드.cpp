@@ -3,14 +3,14 @@
 //using namespace std;
 //typedef tuple<int, int, int> tp;
 //
-//int n, uf[1025];
+//int n, parents[1025];
 //vector<int> ed[1025];
 //
 //int union_find(int idx) {
-//    if (uf[idx] != idx)
-//        uf[idx] = union_find(uf[idx]);
+//    if (parents[idx] != idx)
+//        parents[idx] = union_find(parents[idx]);
 //
-//    return uf[idx];
+//    return parents[idx];
 //}
 //// Prim 으로 하면 틀린다.
 //int main() {
@@ -20,7 +20,7 @@
 //    priority_queue<tp, vector<tp>, greater<tp>> q;
 //
 //    for (int i = 1; i <= n; i++)
-//        uf[i] = i;
+//        parents[i] = i;
 //
 //    for (int i = 1; i <= n; i++) {
 //        for (int j = i + 1; j <= n; j++) {
@@ -40,7 +40,7 @@
 //        if (u == v)
 //            continue;
 //
-//        uf[min(u, v)] = max(u, v);
+//        parents[min(u, v)] = max(u, v);
 //
 //        // 노드를 넣어야 하는데, 유니온 파인드 한 값을 넣어서 자꾸 틀렸음
 //        ed[f].push_back(e);

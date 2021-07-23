@@ -66,6 +66,9 @@
 //        int val = pq.top().first;
 //        pq.pop();
 //
+//        if (val > chk[now]) // 다익스트라에서 간선이 많을 때, 추가하기
+//            continue;
+//
 //        for (auto n : ed[now]) {
 //            int next = n.first;
 //            int nval = n.second + val;
