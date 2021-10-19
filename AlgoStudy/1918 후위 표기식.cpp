@@ -12,7 +12,6 @@
 //    cin >> ip;
 //
 //    for (int i = 0; i < ip.size(); i++) {
-//        cout << answer << endl;
 //        // 알파벳은 바로 출력
 //        if (ip[i] >= 'A' && ip[i] <= 'Z')
 //            answer += ip[i];
