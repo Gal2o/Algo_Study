@@ -99,7 +99,7 @@
 //    // Ans. 구름의 합 구하기
 //    for (int j = 1; j <= n; ++j)
 //        for (int k = 1; k <= n; ++k)
-//            answer += arr[j][k];
+//            answer += arr[j][k];tf
 //
 //    cout << answer << endl;
 //}
